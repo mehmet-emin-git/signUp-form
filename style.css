@@ -1,0 +1,132 @@
+/* google font poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------------Color Variables ----------------------- */
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --dark-green: hsl(154, 61%, 46%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+/* -------------------------- Global Styles ----------------------- */
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: var(--red);
+  background-image: url(./images/bg-intro-desktop.png);
+}
+
+/* -------------------------- Content Styles ----------------------- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2.5rem;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.container > div {
+  flex: 1;
+  padding: 0 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+p {
+  opacity: 0.8;
+}
+
+.box {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 7px;
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.1rem;
+  text-align: center;
+}
+
+.box p {
+  margin: 0;
+}
+
+.blue-box {
+  padding: 1.2rem;
+  background-color: var(--blue);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  border: 1.5px solid var(--blue);
+  outline: none;
+}
+
+.form-control {
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -1.4rem;
+  right: 0;
+  text-align: right;
+  opacity: 0;
+}
+
+button {
+  background-color: var(--green);
+  color: whitesmoke;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--dark-green);
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.4 ease-in;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 2px rgba(9, 82, 25, 0.5);
+}
+
+small {
+  color: var(--grayish-blue);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+small a {
+  color: var(--red);
+  text-decoration: none;
+}
