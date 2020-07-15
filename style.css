@@ -12,6 +12,7 @@
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
+  --bg: hsl(171, 92%, 31%);
 }
 
 /* -------------------------- Global Styles ----------------------- */
@@ -20,7 +21,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: white;
-  background-color: var(--red);
+  background-color: var(--bg);
   background-image: url(./images/bg-intro-desktop.png);
 }
 
@@ -89,12 +90,44 @@ input:focus {
   position: relative;
 }
 
+.form-control.error input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form-control.error input::placeholder {
+  color: var(--red);
+  opacity: 0.7;
+}
+
+.form-control img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.form-control.error img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
 .form-control small {
   position: absolute;
   bottom: -1.4rem;
   right: 0;
   text-align: right;
   opacity: 0;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.form-control.error small {
+  opacity: 1;
 }
 
 button {
@@ -124,8 +157,9 @@ small {
   color: var(--grayish-blue);
   display: block;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 1rem;
+  letter-spacing: 1px;
 }
 
 small a {
