@@ -12,7 +12,6 @@
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
-  --bg: hsl(171, 92%, 31%);
 }
 
 /* -------------------------- Global Styles ----------------------- */
@@ -21,7 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: white;
-  background-color: var(--bg);
+  background-color: var(--red);
   background-image: url(./images/bg-intro-desktop.png);
 }
 
@@ -34,7 +33,7 @@ body {
   margin: 0 auto;
   padding: 2.5rem;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1270px;
 }
 
 .container > div {
@@ -43,12 +42,14 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1.2;
 }
 
 p {
-  opacity: 0.8;
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .box {
@@ -67,6 +68,7 @@ p {
 .blue-box {
   padding: 1.2rem;
   background-color: var(--blue);
+  margin-bottom: 2rem;
 }
 
 input {
